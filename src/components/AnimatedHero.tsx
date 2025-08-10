@@ -198,7 +198,7 @@ export const AnimatedHero = () => {
   return (
     <div ref={container} className='relative h-[200vh] overflow-x-hidden'>
       {/* Floating Icons */}
-      <div className="absolute inset-0 z-10 w-full h-full pointer-events-none">
+      {/* <div className="absolute inset-0 z-10 w-full h-full pointer-events-none">
         {floatingIcons.map((icon, index) => (
           <motion.div
             key={index}
@@ -215,7 +215,7 @@ export const AnimatedHero = () => {
             {icon.content}
           </motion.div>
         ))}
-      </div>
+      </div> */}
 
       <Section1 scrollYProgress={scrollYProgress} />
       <Section2 scrollYProgress={scrollYProgress} />
