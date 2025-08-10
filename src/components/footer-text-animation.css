@@ -1,0 +1,25 @@
+.animated-footer-text {
+  background: linear-gradient(
+    90deg,
+    #f97316, /* orange-500 */
+    #f59e0b, /* amber-500 */
+    #fde68a, /* yellow-300 shimmer */
+    #f59e0b, /* amber-500 */
+    #f97316  /* orange-500 */
+  );
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer-effect 5s linear infinite;
+  animation-delay: 2s;
+}
+
+@keyframes shimmer-effect {
+  0% {
+    background-position: 150% 50%;
+  }
+  100% {
+    background-position: -50% 50%;
+  }
+} 

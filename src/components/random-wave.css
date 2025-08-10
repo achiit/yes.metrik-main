@@ -1,0 +1,36 @@
+.random-wave-letter {
+  color: #1f2937; /* Corresponds to text-gray-900 */
+  transition: color 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.random-wave-letter.is-waving {
+  background: linear-gradient(
+    90deg,
+    #fb923c, /* orange-400 */
+    #f97316, /* orange-500 */
+    #f59e0b, /* amber-500 */
+    #fbbf24, /* amber-400 */
+    #fde68a, /* yellow-300 */
+    #f59e0b, /* amber-500 */
+    #f97316, /* orange-500 */
+    #fb923c  /* orange-400 */
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: random-wave-animation 4s ease-in-out;
+}
+
+@keyframes random-wave-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} 

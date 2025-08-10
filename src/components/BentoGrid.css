@@ -1,0 +1,19 @@
+@keyframes aurora {
+  from {
+    background-position: 50% 50%, 50% 50%;
+  }
+  to {
+    background-position: 350% 50%, 350% 50%;
+  }
+}
+
+.aurora-bg {
+    position: absolute;
+    inset: -10px;
+    background-image: 
+        radial-gradient(ellipse at 100% 0, #f8fafc, transparent 50%),
+        radial-gradient(ellipse at 0 100%, #f8fafc, transparent 50%);
+    background-size: 100% 100%;
+    animation: aurora 20s linear infinite;
+    opacity: 0.6;
+} 
